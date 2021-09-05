@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Restaurant {
+public class Restaurant extends Place{
     private double revenue;
     private double subscriptionPlan;
     private String name;
@@ -8,10 +8,11 @@ public class Restaurant {
     private double rating;
 
 
-    public Restaurant(double revenue, double subscriptionPlan, String name, ArrayList<Item> menu, double rating) {
+    public Restaurant(String ownerId,String address, String name, double revenue, double subscriptionPlan, String name1, ArrayList<Item> menu, double rating) {
+        super(ownerId,address, name);
         this.revenue = revenue;
         this.subscriptionPlan = subscriptionPlan;
-        this.name = name;
+        this.name = name1;
         this.menu = menu;
         this.rating = rating;
     }
