@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             String name = name_layout.getEditText().getText().toString();
             String email = email_layout.getEditText().getText().toString();
             String phone = phone_layout.getEditText().getText().toString();
-            Intent intent = new Intent(this, MainActivity3.class);
+            Intent intent = new Intent(this, MainActivity2.class);
             Bundle bundle = new Bundle();
             bundle.putString("name", name);
             bundle.putString("email", email);
